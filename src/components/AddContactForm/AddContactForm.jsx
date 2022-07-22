@@ -14,7 +14,7 @@ class addContactsForm extends Component {
 
   handleSubmitForm = evt => {
     const { name, number } = this.state;
-    if (name.length === 0 || number.length === 0) {
+    if (name.trim() === '' || number.trim() === '') {
       console.log('please enter your contact');
       return;
     }
